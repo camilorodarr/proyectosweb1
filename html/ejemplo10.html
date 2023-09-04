@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo #10</title>
 </head>
+
 <body>
-    
+    <!--Pattern sirve para aplicar SEGEX-->
+    <!--Size sirve para cambiar el tamaño del textField-->
+    <!--PlaceHolder sirve para aplicar marca de agua-->
+    <!--Fieldset sirve para crear un cuadro al rededor del form-->
+    <!--Legend sirve para añadir un nombre ente el fieldset-->
+
     <h1>Ejemplo formulario</h1>
 
-<form action="">
+    <form action="">
 
-cedula
-<input type="text" pattern="[0-9]{6,12}">
+        <fieldset>
 
-Nombre Paciente
-<input type="text">
-<br>
-<input type="submit" value="Enviar servidor">
+            <legend>Datos Paciente</legend>
 
+            cedula:
+            <input type="text" pattern="[0-9]{6,12}">
 
+            Nombre Paciente:
+            <input type="text" pattern="[A-Z]{1}[a-z ]*" size="10" placeholder="Digitar Nombre">
+            <br>
 
+            fecha nacimiento:
+            <input type="text" pattern="\d{4}/\d{2}/\d{2}">
+            <br>
 
-</form>
+            Como le debo decir:
+            <input type="text" pattern="(Sr|Sra) [A-Z]{1}[a-z ]*">
+            <br>
 
+            Celular:
+            <input type="text" pattern="\+\d{2} \d{3} \d{3} \d{3}">
 
+            <br>
+            <input type="submit" value="Enviar servidor">
 
-
-
-
-
+        </fieldset>
+        <br>
+        <textarea cols="30" rows="5" placeholder="Observaciones"></textarea>
+    </form>
 </body>
+
 </html>
