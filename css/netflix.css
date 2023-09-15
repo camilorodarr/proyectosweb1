@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+.flexContenedor{
+    display: flex;
+}
+
+nav{
+    height: 100px;
+}
+a {
+    color: white;
+}
+
+.divUnoNav {
+    width: 20%;
+}
+.divDosNav {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.divTresNav {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.ImagenLogo {
+    width: 120px;
+    height: 80px;
+
+}
+.ImagenDivTres {
+    width: 50px;
+    height: 50px;
+}
