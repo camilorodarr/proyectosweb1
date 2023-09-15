@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo CSS</title>
-
-<style>
-p{
-    color:#ff0000;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-    border: 2px solid salmon;
-}
-
-
-</style>
-
+    <title>Ejemplo #10</title>
 </head>
-<body style="background-color: #aae0ffda">
 
-<!--Background-color sirve para agregar color al fondo de la pagina-->    
+<body>
+    <!--Pattern sirve para aplicar SEGEX-->
+    <!--Size sirve para cambiar el tamaño del textField-->
+    <!--PlaceHolder sirve para aplicar marca de agua-->
+    <!--Fieldset sirve para crear un cuadro al rededor del form-->
+    <!--Legend sirve para añadir un nombre ente el fieldset-->
+    <!--alt+shift+f para organizar codigo-->
 
-    <h1 style="background-color: #01772f;">Ejemplo CSS</h1>
+    <h1>Ejemplo formulario</h1>
 
-    <p>Que tienes para este viernes?</p>
+    <form action="">
 
-    <p>Una comelona</p>
+        <fieldset>
 
-    <p>Deseo que no llegue el viernes?</p>
+            <legend>Datos Paciente</legend>
 
+            cedula:
+            <input type="text" pattern="[0-9]{6,12}">
 
+            Nombre Paciente:
+            <input type="text" pattern="[A-Z]{1}[a-z ]*" size="10" placeholder="Digitar Nombre">
+            <br>
+
+            fecha nacimiento:
+            <input type="text" pattern="\d{4}/\d{2}/\d{2}">
+            <br>
+
+            Como le debo decir:
+            <input type="text" pattern="(Sr|Sra) [A-Z]{1}[a-z ]*">
+            <br>
+
+            Celular:
+            <input type="text" pattern="\+\d{2} \d{3} \d{3} \d{3}">
+
+            <br>
+            <input type="submit" value="Enviar servidor">
+
+        </fieldset>
+        <br>
+        <textarea cols="30" rows="5" placeholder="Observaciones"></textarea>
+    </form>
 </body>
+
 </html>
