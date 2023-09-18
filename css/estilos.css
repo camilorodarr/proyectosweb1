@@ -4,9 +4,7 @@ body{
 h1{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
-
 nav> a {
     color: black;
     font-size: 14px;
@@ -25,13 +23,10 @@ figure{
 }
 .divIzquierdo {
     width: 80%;
-    
     background-color: blanchedalmond;
 }
-
 .divDerecho {
     width:18% ;
-   
     background-color: cadetblue;
 }
 p {
@@ -44,7 +39,6 @@ h3 {
 .divFondoIzquierdo{
     width: 50%;
 }
-
 div{
     margin-top: 20px;
 }
@@ -52,14 +46,31 @@ div{
     width: 100px;
     height: 100px;
 }
-
 .flexContainerDos{
     display: flex;
     justify-content: space-around;
     width: 50%;
     text-align: center;
-
-
-
-
 }
+
+/*----------------------------------------------------------------------------------------------------------*/
+
+#gridArea {
+    display: grid;
+    grid-template-areas:'encabezado encabezado encabezado aside'
+                        'encabezado intermedio intermedio aside'
+                        'encabezado encabezado encabezado aside';
+}
+#divUno {
+    grid-area: encabezado;
+    background-color: azure;
+}
+#divDos {
+    grid-area: intermedio;
+    background-color: aqua;
+}
+#divTres {
+    grid-area: aside;
+    background-color: bisque;
+}
+

@@ -1,0 +1,52 @@
+#flexContenedor {
+    display: flex;
+}
+.myDiv{
+    background-color: black;
+    width:100%;
+    height:300px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Dodge_Challenger_SRT8_%282015%29_Hirschaid-20220709-RM-120221.jpg/800px-Dodge_Challenger_SRT8_%282015%29_Hirschaid-20220709-RM-120221.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+    }
+.hDivUno {
+    color: white;
+    text-align: center;
+}
+.hDivDos {
+    color: red;
+}
+#divDos {
+    text-align: center;
+}
+#imgDivTres {
+    width: 200px;
+    height: 200px;
+    margin-right: 35px;
+}
+#flexDivTres {
+    justify-content: center;
+    display: flex;
+    background-color: red;
+    text-align: center;
+    height: 350px;
+}
+#flexContenedorCinco {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+#divGris {
+    background-color: #4b5561;
+    width: 200px;
+    height: 100px;
+}
+#divRojo {
+    background-color: #e10e21;
+    width: 200px;
+    height: 100px;
+}
+body {
+    margin: 0px;
+}

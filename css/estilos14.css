@@ -1,0 +1,26 @@
+#flexContenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gridContenedor {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    /*
+    column-gap: 20px;
+    row-gap: 20px;*/
+    gap: 20px;
+    grid-template-rows: 100px 400px auto;
+}
+body {
+    background-color: antiquewhite;
+}
+#flexContenedor>div{
+    width: 400px;
+    border: 1px solid red;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#gridContenedor>div {
+    border: 1px solid blue;
+}
