@@ -1,22 +1,22 @@
 <script>
 
-var numeroUno = 3;
+    var numeroUno = 3;
 
-    if (numeroUno % 2 ==0) {
+    if (esNumeroPar(numeroUno)) {
         console.log("Es Par");
-    }else{
+    } else {
         console.log("Es Impar");
     }
 
-var numeroDos = 4;
+    var numeroDos = 4;
 
-    if (numeroDos % 2 ==0) {
+    if (esNumeroPar(numeroDos)) {
         console.log("Es Par");
-    }else{
+    } else {
         console.log("Es Impar");
     }
 
-    function esNumeroPar(numero){
+    function esNumeroPar(numero) {
         return numero % 2 == 0;
     }
 
