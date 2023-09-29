@@ -1,29 +1,17 @@
 <script>
-
-    var numeroUno = 3;
-
-    if (esNumeroPar(numeroUno)) {
-        console.log("Es Par");
-    } else {
-        console.log("Es Impar");
-    }
-
     var numeroDos = 4;
+    cantidadNumeroLeer = 2;
 
-    if (esNumeroPar(numeroDos)) {
-        console.log("Es Par");
-    } else {
-        console.log("Es Impar");
+    for (let i = 0; i < cantidadNumeroLeer; i++) {
+        var numero = parseInt(prompt("Digite un numero"))
+        if (esNumeroPar(numero))
+            console.log("es par")
+        else
+            console.log("Es impar")
     }
 
     function esNumeroPar(numero) {
         return numero % 2 == 0;
     }
-
-    /*nose*/
-
-
-
-
 
 </script>
