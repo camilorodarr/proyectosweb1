@@ -1,0 +1,35 @@
+<script>
+
+  var frutas = ["Manzana", 'pera', "Tomate"];
+
+  for (let i = 0; i < frutas.lenght; i++) {
+    console.log(frutas[i]);
+  }
+
+  for (const key in object) {
+    console.log(frutas[key])
+  }
+
+  /*Definir un array vacio*/
+  var vegetales = []
+  vegetales[0] = "Zanahoria";
+  vegetales[1] = "Lechuga";
+  vegetales[2] = "Cebolla";
+
+  /*al array vegetales para cada elemento que tenga guarda cada valor en la variable vegetal, eso es programacion funcional*/
+  vegetales.forEach(vegetal => {
+    console.log(vegetal);
+  });
+
+  for (const vegetalito of vegetales) {
+    console.log(vegetalito);
+  }
+
+universidad = {
+  nombre: "CECAR",
+  direccion: "KM 1 via a corozal"
+}
+
+console.log(universidad.nombre);
+  
+</script>
