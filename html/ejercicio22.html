@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JS</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+
+<body>
+
+    <h1 id="titulo">Ejemplos</h1>
+    <p id="texto">El Front End es mejor que el Back End</p>
+
+    <script>
+        var h1 = document.getElementById("titulo");
+        h1.innerHTML = "Ejemplo JS";
+        
+        crearNodo("p","El mundo cambia en un solo click");
+        crearNodo("h2","BACK - END");
+
+        var pDos = document.getElementById("texto");
+        pDos.remove();
+    </script>
+
+    
+</body>
+
+</html>
