@@ -50,7 +50,7 @@ function modificar() {
     var nombres = document.getElementById("nombres");
     var apellidos = document.getElementById("apellidos");
 
-    var estudiantes = JSON.parse(localStorage.getItem("estudiantes") || "[]")
+    var estudiantes = JSON.parse(localStorage.getItem("estudiantes") || "[]");
 
     encontrado = false;
 
